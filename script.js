@@ -13,7 +13,7 @@ function shuffleArray(array) {
 }
 
 function groupAndDisplay() {
-    const numGroups = 5;
+    const numGroups=parseInt(document.getElementById('num').value);
     shuffleArray(inputArray);
     const elementsPerGroup = Math.floor(inputArray.length / numGroups);
     const tableBody = document.getElementById("tableBody");
